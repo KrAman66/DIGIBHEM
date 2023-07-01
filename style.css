@@ -1,0 +1,65 @@
+h1, h2 {
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    border: 1px solid;
+    background-color: black;
+    color: white;
+    font-style: italic;
+  }
+  
+  #myform {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #room-selection, #amenities-selection {
+    display: flex;
+    border: 1px solid black;
+    margin-top: 10px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .room, .amenity {
+    width: 45%;
+    box-sizing: border-box;
+    border: 0px solid black;
+    text-align: center;
+    padding: 16px;
+  }
+  
+  .room img, .amenity img {
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  #register-btn {
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #register-btn:hover {
+    background-color: green;
+  }
+  
+  #result {
+    display: none;
+    border: 1px solid;
+    padding: 10px;
+    margin-top: 20px;
+  }

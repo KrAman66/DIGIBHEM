@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Hotel Booking Registration Form</title>
+</head>
+<body>
+  <h1>Hotel Booking Registration Form</h1>
+
+  <form id="myform">
+    <h2>Customer Info</h2>
+    <label for="customer-name">Customer Name:</label>
+    <input type="text" id="customer-name" required><br><br>
+
+    <label for="check-in-date">Check-in Date:</label>
+    <input type="date" id="check-in-date" required><br><br>
+
+    <label for="total-days">Total No of Days:</label>
+    <input type="number" id="total-days" required><br><br>
+
+    <label for="total-persons">Total No of Persons:</label>
+    <input type="number" id="total-persons" required><br><br>
+
+    <h2>Room Information</h2>
+    <div id="room-selection">
+      <div class="room">
+        <label for="deluxe-room">
+          <img src="./images/deluxeroom_1748.jpg" width="400" height="250"><br>
+          <input type="radio" id="deluxe-room" name="roomType" value="Deluxe-Room" required><strong>Deluxe Room</strong>
+        </label>
+      </div>
+      <div class="room">
+        <label for="suite-room">
+          <img src="./images/dream-presidential-suite-terrace.jpg" width="400" height="250"><br>
+          <input type="radio" id="suite-room" name="roomType" value="Suite-Room" required><strong>Suite Room</strong>
+        </label>
+      </div>
+    </div>
+
+    <h2>Amenities</h2>
+    <div id="amenities-selection">
+      <div class="amenity">
+        <label for="ac">
+          <img src="./images/76170764.jpg" width="400" height="250"><br>
+          <input type="checkbox" id="ac" name="amenities" value="A/C"><strong>A/C</strong>
+        </label>
+      </div>
+      <div class="amenity">
+        <label for="locker">
+          <img src="./images/locker.webp" width="400" height="250"><br>
+          <input type="checkbox" id="locker" name="amenities" value="Locker"><strong>Locker</strong>
+        </label>
+      </div>
+    </div>
+
+    <h2>Advance Payment</h2>
+    <label for="advance-amount">Advance Amount:</label>
+    <input type="number" id="advance-amount" required><br><br>
+
+    <center><button id="register-btn" type="submit">Register</button></center>
+  </form>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
